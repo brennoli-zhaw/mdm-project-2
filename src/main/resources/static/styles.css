@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rubik+Marker+Hatch&display=swap');
+
+body{
+    min-height: 100dvh;
+    min-width: 100dvw;
+}
+
+.container-fluid{
+    width: 100%;
+    max-width: 1920px;
+    margin: auto;
+    padding: 30px;
+}
+
+.top{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background: rgba(255,255,255, 0.4);
+    backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition: 250ms ease-in-out;
+}
+
+h1 {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+
+h2{
+    font-family: "Rubik Marker Hatch", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 27px;
+}
+
+.background,
+.background img{
+    position: absolute;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.background img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#answerPart{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: calc(10% / 2);
+}
+
+.card{
+    border-radius: 20px;
+    background-color: rgba(255,255,255,0.4);
+    backdrop-filter: blur(10px);
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    width: 29.99%;
+    margin-top: 30px;
+    padding: 15px;
+    min-height: 25dvh;
+    z-index: 1;
+    transition: 250ms ease-in-out;
+}
+
+.card:hover,
+.top:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    backdrop-filter: blur(15px);
+    background-color: rgba(255,255,255,0.6);
+    
+}
+.card:hover{
+    transform: scale(1.03);
+}
+
+ul{
+    list-style-type: none;
+    padding-top: 30px;
+}
+
+ul span{
+    width: 60px;
+    font-weight: 700;
+    display: block;
+    position: relative;
+    margin-right: 20px;
+}
+
+li{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px;
+} 
+
+*{
+    box-sizing: border-box;
+    border: solid transparent 0px;
+    padding: 5px;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}

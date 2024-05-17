@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Image Classification</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" async></script>
+</head>
+
+<body>
+    <div class="background">
+        <img id="preview" width="300" src="https://t2.gstatic.com/licensed-image?q=tbn:ANd9GcTBsad6IgXgIRmlEkX3ot9sx3xdhuMuvx7n_dJBxU5dGCjk4AjFJVKdDvq6bwAQXmqZX48Qbg09wRHjSDdmLeE" alt="preview" />
+    </div>
+    <div class="top">
+        <div class="container-fluid">
+        <h1>Model Comparer</h1>
+        <form>
+            <div class="form-group">
+                <label for="exampleFormControlFile1">Bitte Bild hochladen (jpeg, png)</label>
+                <input type="file" accept="image/png, image/jpeg" class="form-control-file" id="image" name="image"
+                    onchange="checkFiles(this.files);">
+            </div>
+        </form>
+    </div>
+    </div>
+    <div class="container-fluid">
+        <div id="answerPart">
+            
+        </div>
+    </div>
+
+
+</body>
+
+</html>
